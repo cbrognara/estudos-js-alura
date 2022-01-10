@@ -247,22 +247,55 @@
 //   document.write('<br>')
 // }
 
-var numero = 0
+// var numero = 0
 
-while (numero <= 100) {
-  document.write(numero)
-  document.write('<br>')
-  numero = numero + 2
-}
+// while (numero <= 100) {
+//   document.write(numero)
+//   document.write('<br>')
+//   numero = numero + 2
+// }
 
-var loginCadastrado = 'alura'
-var senhaCadastrada = 'alura321'
+// var loginCadastrado = 'alura'
+// var senhaCadastrada = 'alura321'
 
-var loginInformado = prompt('Informe seu login')
-var senhaInformada = prompt('Informe sua senha')
+// var loginInformado = prompt('Informe seu login')
+// var senhaInformada = prompt('Informe sua senha')
 
-if (loginCadastrado == loginInformado && senhaCadastrada == senhaInformada) {
-  alert('Bem-vindo ao sistema ' + loginInformado)
-} else {
-  alert('Login inválido. Tente novamente')
+// if (loginCadastrado == loginInformado && senhaCadastrada == senhaInformada) {
+//   alert('Bem-vindo ao sistema ' + loginInformado)
+// } else {
+//   alert('Login inválido. Tente novamente')
+// }
+
+// var segredo = Math.round(Math.random() * 10)
+
+// var input = document.querySelector('input')
+
+// function verifica() {
+//   if (input.value == segredo) {
+//     alert('Você ACERTOU!')
+//   } else {
+//     alert('Você ERROU!!!!!!!!')
+//   }
+//   input.value = ''
+//   input.focus()
+// }
+
+// var button = document.querySelector('button')
+
+// button.onclick = verifica
+
+var segredos = [2, 4, 5, 7]
+var input = document.querySelector('input')
+
+function verificar() {
+  for (var posicao = 0; posicao < 4; posicao++) {
+    if (input.value == segredo) {
+      alert('Você ACERTOU!')
+    } else {
+      alert('Você ERROU!!!!!!!!')
+    }
+    input.value = ''
+    input.focus()
+  }
 }
