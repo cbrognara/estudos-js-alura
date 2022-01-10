@@ -205,36 +205,64 @@
 
 // Jogo Adivinha Numero
 
-var numeroPensado = Math.round(Math.random() * 10)
-var chute = Number(prompt('digite seu chute!'))
+// var numeroPensado = Math.round(Math.random() * 10)
+// var chute = Number(prompt('digite seu chute!'))
 
-console.log(numeroPensado)
+// console.log(numeroPensado)
 
-if (chute == numeroPensado) {
-  document.write('Você acertou!')
+// if (chute == numeroPensado) {
+//   document.write('Você acertou!')
+// } else {
+//   document.write('Você errou, o número pensado foi ' + numeroPensado)
+// }
+
+// // If dentro do If
+
+// function pulaLinha() {
+//   document.write("<br>");
+// }
+
+// function mostra(frase) {
+//   document.write(frase);
+//   pulaLinha();
+// }
+
+// var idade = parseInt(prompt("Qual é sua idade"));
+// var temCarteira = prompt("Tem carteira? Responda S ou N");
+
+// if( idade >= 18 ) {
+//   if( temCarteira == "S") {
+//       mostra("Pode dirigir");
+//   }
+// }
+
+// if(idade < 18) {
+//   mostra("Não pode dirigir");
+
+// var anoCopa = 1930
+
+// while (anoCopa < 2022) {
+//   document.write('Teve copa em ' + '<b>' + anoCopa + '</b>')
+//   anoCopa = anoCopa + 4
+//   document.write('<br>')
+// }
+
+var numero = 0
+
+while (numero <= 100) {
+  document.write(numero)
+  document.write('<br>')
+  numero = numero + 2
+}
+
+var loginCadastrado = 'alura'
+var senhaCadastrada = 'alura321'
+
+var loginInformado = prompt('Informe seu login')
+var senhaInformada = prompt('Informe sua senha')
+
+if (loginCadastrado == loginInformado && senhaCadastrada == senhaInformada) {
+  alert('Bem-vindo ao sistema ' + loginInformado)
 } else {
-  document.write('Você errou, o número pensado foi ' + numeroPensado)
+  alert('Login inválido. Tente novamente')
 }
-
-// If dentro do If
-
-function pulaLinha() {
-  document.write("<br>");
-}
-
-function mostra(frase) {
-  document.write(frase);
-  pulaLinha();
-}
-
-var idade = parseInt(prompt("Qual é sua idade"));
-var temCarteira = prompt("Tem carteira? Responda S ou N");
-
-if( idade >= 18 ) {
-  if( temCarteira == "S") {
-      mostra("Pode dirigir");
-  }
-}
-
-if(idade < 18) {
-  mostra("Não pode dirigir");
