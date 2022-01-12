@@ -365,11 +365,63 @@ const listaDeMedias = [6.5, 7, 8.5]
 
 // aluno('Camila')
 
-const notaCamila = () => {
-  let nome = 'Camila'
-  if (listaDeAlunos.includes(nome)) {
-    return listaDeMedias[listaDeAlunos.indexOf(nome)]
-  } else {
-    return 'Aluno não encontrado'
-  }
-}
+// const notaCamila = () => {
+//   let nome = 'Camila'
+//   if (listaDeAlunos.includes(nome)) {
+//     return listaDeMedias[listaDeAlunos.indexOf(nome)]
+//   } else {
+//     return 'Aluno não encontrado'
+//   }
+// }
+
+// TEMA: FOR XXXXXXXXXXXX
+
+// const notas = [10, 6.5, 8, 7.5]
+// let somaDasNotas = 0
+
+// for (i = 0; i < notas.length; i++) {
+//   somaDasNotas = somaDasNotas + notas[i] // somaDasNotas += notas[i]
+// }
+
+// let media = somaDasNotas / notas.length
+// console.log(media)
+
+// const notas = [10, 6.5, 8, 7.5]
+
+// let soma = (valorAnterior, valorNovo) =>
+//   (valorAnterior + valorNovo) / notas.length
+
+// console.log(notas.reduce(soma))
+
+// array.forEach(element => {})
+
+// TEMA: FOR EACH XXXXXXX
+
+// const notas = [10, 6.5, 8, 7.5]
+// // let somaDasNotas = 0
+
+// // notas.forEach(nota => {
+// //   somaDasNotas += nota
+// // })
+
+// // let media = somaDasNotas / notas.length
+
+// // console.log(media)
+
+// const notasProcessadas = notas.map(nota => nota * 2)
+
+// console.log(notasProcessadas)
+
+// TEMA: Alterando strings com map() XXXXXXXXXXXX
+
+// let nomes = ['camila', 'alexandre', 'lulu']
+
+// const nomesAtualizados = nomes.map(nome => nome.toUpperCase())
+
+// console.log(nomesAtualizados)
+
+const nomes = ['Alexandre', 'Camila', 'Lulu']
+const notas = ['4.5', '7', '9.5']
+
+const reprovado = nomes.filter((aluno, indice) => notas[indice] < 5)
+console.log(reprovado)
