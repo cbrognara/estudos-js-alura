@@ -239,6 +239,8 @@
 // if(idade < 18) {
 //   mostra("Não pode dirigir");
 
+// Tema: WHILE XXXXXXXXXXXXX
+
 // var anoCopa = 1930
 
 // while (anoCopa < 2022) {
@@ -285,17 +287,89 @@
 
 // button.onclick = verifica
 
-var segredos = [2, 4, 5, 7]
-var input = document.querySelector('input')
+// var segredos = [2, 4, 5, 7]
+// var input = document.querySelector('input')
 
-function verificar() {
-  for (var posicao = 0; posicao < 4; posicao++) {
-    if (input.value == segredo) {
-      alert('Você ACERTOU!')
-    } else {
-      alert('Você ERROU!!!!!!!!')
-    }
-    input.value = ''
-    input.focus()
+// function verificar() {
+//   for (var posicao = 0; posicao < 4; posicao++) {
+//     if (input.value == segredo) {
+//       alert('Você ACERTOU!')
+//     } else {
+//       alert('Você ERROU!!!!!!!!')
+//     }
+//     input.value = ''
+//     input.focus()
+//   }
+// }
+
+// for (let index = 0; index < array.length; index++) {
+//   const element = array[index];
+
+// }
+
+// let nota1 = 10
+// let nota2 = 6.5
+// let nota3 = 8
+// let nota4 = 7.5
+
+// let media = (10 + 6.5 + 8 + 7.5) / 4
+
+// const media1 = {
+//   nota1: 10,
+//   nota2: 6.5,
+//   nota3: 8,
+//   nota4: 7.5
+// }
+
+// Tema: Arrays XXXXXXXXXXX
+
+// const notas = [10, 6.5, 8, 7.5]
+// const media = (notas[0] + notas[1] + notas[8] + [7.5]) / 4
+
+// console.log(notas.length)
+
+// const notasAluno1 = [10, 6, 8]
+// notasAluno1.push(7)
+
+// const arrayVazia = []
+
+// console.log(arrayVazia)
+// console.log(arrayVazia.length)
+
+// Tema: lista com 2 dimensoes, inseption arrays XXXXXXXXXX
+
+// const letras = ['a', 'b', 'c', 'd', 'e']
+// const letras2 = letras
+// const numeros = [7, 8, 9, 10]
+
+// let mistura = [letras, numeros]
+
+// console.log(`Mostra que ${mistura[0][1]} junta com ${mistura[1][3]}`)
+
+// TEMA: LOOP - EXERCICIO ALURA
+
+// Criar função que recebe como argumento o nome de um aluno;
+// Verifique se o aluno está presente na lista e retorne a media final que se encontra no mesmo índice.
+// Caso o nome do aluno não esteja na lista, retorne uma mensagem indicando que o aluno não foi encontrado.
+
+const listaDeAlunos = ['Alexandre', 'Camila', 'Lulu']
+const listaDeMedias = [6.5, 7, 8.5]
+
+// function aluno(nome) {
+//   if (listaDeAlunos.includes(nome)) {
+//     console.log(listaDeMedias[listaDeAlunos.indexOf(nome)])
+//   } else {
+//     return 'Aluno não encontrado'
+//   }
+// }
+
+// aluno('Camila')
+
+const notaCamila = () => {
+  let nome = 'Camila'
+  if (listaDeAlunos.includes(nome)) {
+    return listaDeMedias[listaDeAlunos.indexOf(nome)]
+  } else {
+    return 'Aluno não encontrado'
   }
 }
